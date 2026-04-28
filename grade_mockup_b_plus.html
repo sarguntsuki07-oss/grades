@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grades Dashboard</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6f7;
+}
+
+/* Top red bar */
+.header {
+  background: #b00000;
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* GPA box */
+.gpa-box {
+  background: white;
+  border: 1px solid #ddd;
+  width: 300px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.gpa-values {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background: #f0f0f0;
+}
+
+.course-title {
+  color: #2d6fae;
+}
+
+.grade-circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight {
+  background: #e6edf5;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div></div>
+  <div class="header-right">
+    <div>⚙️</div>
+    <div>👤</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="title">Student Grades</div>
+
+  <div class="gpa-box">
+    <strong>GPA Summary</strong>
+    <div class="gpa-values">
+      <div>3.444</div>
+      <div>0.000</div>
+      <div>3.444</div>
+    </div>
+  </div>
+
+  <table>
+    <tr>
+      <th>Term</th>
+      <th>Course</th>
+      <th>Title</th>
+      <th>Campus</th>
+      <th>Grade</th>
+      <th>Credits</th>
+      <th>Quality Points</th>
+      <th>CRN</th>
+    </tr>
+
+    <tr>
+      <td>Spring 2026</td>
+      <td>ECON 1116</td>
+      <td class="course-title">Principles of Microeconomics</td>
+      <td>BOS</td>
+      <td><div class="grade-circle">B+</div></td>
+      <td>4.000</td>
+      <td>13.332</td>
+      <td>30394</td>
+    </tr>
+
+    <tr>
+      <td>Spring 2026</td>
+      <td>ENGW 1114</td>
+      <td class="course-title">First-Year Writing</td>
+      <td>BOS</td>
+      <td><div class="grade-circle">A</div></td>
+      <td>4.000</td>
+      <td>16.000</td>
+      <td>32733</td>
+    </tr>
+
+    <tr>
+      <td>Spring 2026</td>
+      <td>MATH 1241</td>
+      <td class="course-title">Calculus 1</td>
+      <td>BOS</td>
+      <td><div class="grade-circle">B+</div></td>
+      <td>4.000</td>
+      <td>13.332</td>
+      <td>33271</td>
+    </tr>
+
+    <tr class="highlight">
+      <td>Spring 2026</td>
+      <td>CS 2100</td>
+      <td class="course-title">Program Design & Implementation</td>
+      <td>BOS</td>
+      <td><div class="grade-circle">A</div></td>
+      <td>4.000</td>
+      <td>16.000</td>
+      <td>36029</td>
+    </tr>
+
+    <tr>
+      <td>Spring 2026</td>
+      <td>CS 2101</td>
+      <td class="course-title">Lab for CS 2100</td>
+      <td>BOS</td>
+      <td><div class="grade-circle">A</div></td>
+      <td>1.000</td>
+      <td>4.000</td>
+      <td>36048</td>
+    </tr>
+
+  </table>
+</div>
+
+</body>
+</html>
